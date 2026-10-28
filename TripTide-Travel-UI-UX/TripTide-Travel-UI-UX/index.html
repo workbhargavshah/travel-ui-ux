@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TripTide — a travel planning UI/UX concept for thoughtful, easy-to-organize trips." />
+  <title>TripTide — Find your next somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="TripTide home"><span class="brand-mark">↗</span> triptide</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#discover">Discover</a><a href="#how-it-works">How it works</a><a href="#stories">Travel stories</a>
+    </nav>
+    <div class="header-actions"><a class="sign-in" href="#footer">Sign in</a><a class="btn btn-dark btn-small" href="#planner">Plan a trip <span>↗</span></a></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Find your next<br><em>somewhere.</em></h1>
+        <p class="hero-description">Big adventures or slow weekends. Bring your ideas together and turn “one day” into a trip you’ll remember.</p>
+        <div class="hero-buttons"><a class="btn btn-dark" href="#planner">Start planning <span>↗</span></a><a class="play-link" href="#how-it-works"><span class="play-icon">▶</span> See how it works</a></div>
+        <div class="social-proof"><div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>+</span></div><div><strong>12k+ happy explorers</strong><small>making memories, one trip at a time</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="sun-shape"></div>
+        <div class="photo-card main-photo"><div class="photo-overlay"><span class="location-pill">✦ &nbsp; MADE FOR GETTING LOST</span><div><p>Somewhere in</p><h2>Amalfi Coast, Italy</h2></div></div></div>
+        <div class="floating-card weather-card"><span class="weather-icon">☀</span><div><strong>24° C</strong><small>Perfect for exploring</small></div></div>
+        <div class="floating-card mini-trip"><div class="mini-thumb"></div><div><small>YOUR NEXT ESCAPE</small><strong>Coastal daydream</strong><span>5 days · 3 stops</span></div><span class="mini-arrow">↗</span></div>
+        <div class="scribble">go where<br>you feel alive <span>↙</span></div>
+      </div>
+    </section>
+
+    <section class="planner-wrap" id="planner">
+      <div class="planner-heading"><div><span class="section-kicker">MAKE IT HAPPEN</span><h2>Your trip, your way.</h2></div><p>A few details are all it takes to start dreaming.</p></div>
+      <form class="planner" id="tripForm">
+        <label><span>✈</span><div><small>WHERE TO?</small><input id="destination" type="text" placeholder="Anywhere you dream of" /></div></label>
+        <label><span>▦</span><div><small>WHEN?</small><select id="tripTime"><option value="">Choose your dates</option><option>Next month</option><option>In 3 months</option><option>I'm flexible</option></select></div></label>
+        <label><span>♧</span><div><small>TRAVEL STYLE</small><select id="tripStyle"><option value="">Pick your vibe</option><option>Nature & outdoors</option><option>Food & culture</option><option>Slow & relaxing</option><option>City adventures</option></select></div></label>
+        <button class="btn btn-coral" type="submit">Find my vibe <span>↗</span></button>
+      </form>
+      <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+    </section>
+
+    <section class="destinations section" id="discover">
+      <div class="section-top"><div><span class="section-kicker">A LITTLE INSPIRATION</span><h2>Places that stay with you.</h2></div><a class="text-link" href="#planner">Explore all destinations <span>↗</span></a></div>
+      <div class="destination-grid">
+        <article class="destination-card destination-large"><div class="destination-photo photo-japan"></div><div class="destination-info"><div><h3>Kyoto, Japan</h3><p>Quiet temples, little streets & tea stops</p></div><span class="round-arrow">↗</span></div><span class="card-tag">CULTURE & CALM</span></article>
+        <article class="destination-card"><div class="destination-photo photo-portugal"></div><div class="destination-info"><div><h3>Lisbon, Portugal</h3><p>Golden hours and tiled streets</p></div><span class="round-arrow">↗</span></div><span class="card-tag">CITY BREAK</span></article>
+        <article class="destination-card"><div class="destination-photo photo-bali"></div><div class="destination-info"><div><h3>Bali, Indonesia</h3><p>Green escapes and ocean air</p></div><span class="round-arrow">↗</span></div><span class="card-tag">SLOW TRAVEL</span></article>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+      <div class="how-intro"><span class="section-kicker">LESS TABS. MORE TAKEOFF.</span><h2>From “what if?”<br>to <em>“we’re going.”</em></h2><p>Planning should feel like part of the adventure. Keep the good ideas, skip the overwhelm.</p><a class="btn btn-dark" href="#planner">Build your itinerary <span>↗</span></a></div>
+      <div class="steps">
+        <article class="step"><div class="step-number">01</div><div class="step-icon coral-icon">⌕</div><h3>Collect your ideas</h3><p>Save places, food spots, and experiences that spark your curiosity.</p></article>
+        <article class="step"><div class="step-number">02</div><div class="step-icon green-icon">⌁</div><h3>Shape your route</h3><p>Bring your saved places into a simple, flexible day-by-day plan.</p></article>
+        <article class="step"><div class="step-number">03</div><div class="step-icon blue-icon">↗</div><h3>Go make memories</h3><p>Share the plan with your people and enjoy the journey together.</p></article>
+      </div>
+    </section>
+
+    <section class="quote-section section" id="stories">
+      <div class="quote-mark">“</div><blockquote>We stopped spending our evenings planning the trip and started getting excited about actually going.</blockquote><div class="quote-author"><span class="author-avatar">S</span><div><strong>Samira K.</strong><small>Weekend explorer · 8 trips planned</small></div><span class="quote-stars">★★★★★</span></div>
+    </section>
+
+    <section class="cta-section">
+      <div><span class="section-kicker">YOUR OUT-OF-OFFICE ERA</span><h2>The world is calling.<br><em>Let’s answer.</em></h2><p>Your next favorite memory is waiting somewhere out there.</p></div>
+      <a class="btn btn-light" href="#planner">Plan your first trip <span>↗</span></a>
+      <div class="cta-doodle">✳</div>
+    </section>
+  </main>
+
+  <footer id="footer"><a class="brand" href="#"><span class="brand-mark">↗</span> triptide</a><p>Thoughtful plans. Unforgettable places.</p><div class="footer-links"><a href="#discover">Discover</a><a href="#how-it-works">How it works</a><a href="#planner">Plan a trip</a></div><small>UI/UX concept project · Designed for learning and portfolio use · © 2026 TripTide</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
